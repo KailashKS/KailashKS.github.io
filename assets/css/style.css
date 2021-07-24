@@ -1,4 +1,11 @@
+html {
+	scroll-padding-top: 70px; /* height of sticky header */
+  }
 
+
+body {
+	background-color: #F8F8FF;
+}
 
 .bgCustom {
 	background-color: #3B4252;
@@ -8,9 +15,7 @@
 	color: rgb(219, 219, 216);
 }
 
-body {
-	background-color: #F8F8FF;
-}
+
 
 .btn-outline-primary:hover{
 	background-color: #547BC0;
