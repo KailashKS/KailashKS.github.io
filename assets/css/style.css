@@ -1,0 +1,62 @@
+
+
+.bgCustom {
+	background-color: #3B4252;
+}
+
+.copyright {
+	color: rgb(219, 219, 216);
+}
+
+body {
+	background-color: #F8F8FF;
+}
+
+.btn-outline-primary:hover{
+	background-color: #547BC0;
+	color: whitesmoke;
+	border-color: #839dc9;
+}
+
+.btn-outline-primary {
+	color: #547BC0;
+	border-color: #839dc9;
+}
+
+.card {
+	position: relative;
+	top: 0;
+	transition: top ease-in-out 0.5s;
+  }
+
+.card:hover {
+	top: -5px;
+  }
+
+  .nav-link {
+	  color: aliceblue;
+  }
+  
+  .nav-link:hover{
+	  color: aliceblue;
+  }
+
+  /* .tab-pane.active {
+    animation: slide-down 1s ease-out;
+}
+
+@keyframes slide-down {
+    0% { opacity: 0; transform: translateY(100%); }
+    100% { opacity: 1; transform: translateY(0); }
+} */
+
+.tab-pane.fade {
+	transition: all 0.2s;
+	transform: translateY(1rem);
+  }
+  
+#map {
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+}

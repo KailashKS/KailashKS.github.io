@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+	<link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+	<link rel="stylesheet" href="./assets/css/style.css">
+
+	<link rel="icon" href="./images/graduated.png" type="image/x-icon"/>
+	<title>Portfolio Website </title>
+</head>
+<body>
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg bgCustom navbar-dark py-3">
+		<div class="container-lg">
+			<a href="#home" class="navbar-brand lead h1">&lt;Kailash /&gt;</a>
+
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+			data-bs-target="#navmenu">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navmenu">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item">
+						<a href="#projects" class="nav-link">Projects</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="#aboutme" class="nav-link">About Me</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="#resume" class="nav-link">Resume</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="#skills" class="nav-link">Skills & Co-Curriculars</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="#education" class="nav-link">Education</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Showcase -->
+	<section class="bgCustom text-light p-5 text-center text-sm-start shadow-lg rounded-bottom z-index-3" id="home">
+		<div class="container">
+			<div class="d-sm-flex align-items-center justify-content-between">
+				<div>
+					<h1 class="mx-5">Kailash Karthik <span class="text-warning">Sekhar</span></h1>
+					<p class="lead my-4 mx-5">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+						Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+						nulla pariatur.
+					</p>
+				</div>
+				<img class="img-fluid w-50 d-none d-sm-block" src="images/showcase.svg" alt="">
+			</div>
+		</div>
+	</section>
+
+
+	<!-- Projects -->
+	
+	<section class="p-5" id="projects">
+		<div class="container">
+			<h2 class="display-4 mb-5 text-center">Projects</h2>
+			<div class="row text-center g-4">
+				<div class="col-md">
+					<div class="card p-2 shadow-lg bg-white rounded text-dark">
+						<div class="card-body text-center">
+							<div class="h1 mb-3">
+								<i class="bi bi-laptop"></i>
+							</div>
+							<h3 class="card-title mb-3">Lorem, ipsum.</h3>
+							<p class="card-text">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+								Officiis saepe, repellendus ipsum dolorum sequi quos!
+							</p>
+							<a href="#" class="btn btn-primary">Repo</a>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="card p-2 shadow-lg bg-white rounded text-dark">
+						<div class="card-body text-center">
+							<div class="h1 mb-3">
+								<i class="bi bi-people"></i>
+							</div>
+							<h3 class="card-title mb-3">Something</h3>
+							<p class="card-text">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+								Officiis saepe, repellendus ipsum dolorum sequi quos!
+							</p>
+							<a href="#" class="btn btn-primary">Repo</a>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="card p-2 shadow-lg bg-white rounded text-dark">
+						<div class="card-body text-center">
+							<div class="h1 mb-3">
+								<i class="bi bi-person-square"></i>
+							</div>
+							<h3 class="card-title mb-3">Myself</h3>
+							<p class="card-text">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+								Officiis saepe, repellendus ipsum dolorum sequi quos!
+							</p>
+							<a href="#" class="btn btn-primary">Repo</a>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- About Me -->
+
+	<section class="p-5 bgCustom shadow-lg rounded text-white" id="aboutme">
+		<div class="container">
+			<div class="row align-items-center justify-content-center">
+				<div class="col-5 d-none d-lg-block align-self-center">
+					<img src="./images/kailash.jpg" alt="" class="border border-secondary rounded-circle profile-img" height="375">
+				</div>
+				<div class="col-lg-7 p-5">
+					<h2 class="display-4 mb-5 text-center">About Me</h2>
+					<p class="lead">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam porro 
+						facilis quasi fugiat, unde ex.
+					</p>
+					<p>
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+						Ducimus sed sapiente nesciunt quisquam aut culpa et eaque consequuntur. 
+						Eligendi inventore voluptates blanditiis cupiditate libero vel esse earum neque 
+						temporibus magnam!
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Resume -->
+
+	<section class="p-5" id="resume">
+		<div class="container">
+			<div class="row align-items-center justify-content-center text-center">
+				<div class="col-lg-7 p-5">
+					<h2 class="display-4 mb-5 text-center">Resume</h2>
+					<p class="lead pb-2">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam porro 
+						facilis quasi fugiat, unde ex.
+					</p>
+					<button class="btn btn-lg btn-outline-primary">Download Resume</button>
+				</div>
+				<div class="col-5 d-none d-lg-block align-self-center">
+					<img src="./images/resume.svg" alt="" class="img-fluid height="375">
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- I HATE COMMENTING FOR FFS.. SHOULD HAVE USED WIX -->
+
+	<!-- Skills -->
+
+	<!-- <section class="bgCustom shadow-lg rounded z-index-2 text-white p-5" id="skills">
+		<div class="container align-items-center justify-content-center text-center">
+			<h2 class="display-4 mb-5 text-center">Skills</h2>
+			<div class="row text-center py-4 g-4">
+				<div class="col-md-6 col-lg-3">
+					<i class="fab fa-python fa-8x py-2"></i>
+					<p class="lead">Python</p>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<i class="fab fa-java fa-8x py-2"></i>
+					<p class="lead">Java</p>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<i class="fab fa-git fa-8x py-2"></i>
+					<p class="lead">Git</p>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<i class="fas fa-laptop-code fa-8x py-2"></i>
+					<p class="lead">R</p>
+				</div>
+			</div>
+
+			<div class="row text-center py-5 g-4">
+				<div class="col-md-6 col-lg-3">
+					<i class="fab fa-html5 fa-8x py-2"></i>
+					<p class="lead">HTML</p>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<i class="fab fa-css3-alt fa-8x py-2"></i>
+					<p class="lead">CSS</p>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<i class="fab fa-js-square fa-8x py-2"></i>
+					<p class="lead">JavaScript</p>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<i class="fas fa-terminal fa-8x py-2"></i>
+					<p class="lead">Linux Terminal</p>
+				</div>
+			</div>
+		</div>
+	</section> -->
+
+	<!-- Tabs -->
+
+	<section class="bgCustom shadow-lg rounded z-index-2 text-white p-5" id="skills">
+		<div class="container align-items-center justify-content-center text-center">
+			<h2 class="display-4 mb-5 text-center">Skills & Co-Curriculars</h2>
+
+			<nav>
+				<div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+				  <button class="nav-link active lead" id="technical-skills-tab" data-bs-toggle="tab" data-bs-target="#technical-skills" type="button" role="tab" aria-controls="technical-skills" aria-selected="true">Technical Skills</button>
+				  <button class="nav-link lead" id="nontech-skills-tab" data-bs-toggle="tab" data-bs-target="#nontech-skills" type="button" role="tab" aria-controls="nontech-skills" aria-selected="false">Other Skills</button>
+				  <button class="nav-link lead" id="coc-skills-tab" data-bs-toggle="tab" data-bs-target="#coc-skills" type="button" role="tab" aria-controls="coc-skills" aria-selected="false">Co-Curriculars</button>
+				</div>
+			  </nav>
+
+			<!-- Technical Skills Tab -->
+
+			<div class="tab-content" id="nav-tabContent">
+			<div class="tab-pane fade show active" id="technical-skills" role="tabpanel" aria-labelledby="technical-skills-tab">
+				<div class="row text-center py-5 g-4">
+					<div class="col-md-6 col-lg-3">
+						<i class="fab fa-python fa-8x py-2"></i>
+						<p class="lead">Python</p>
+					</div>
+					<div class="col-md-6 col-lg-3">
+						<i class="fab fa-java fa-8x py-2"></i>
+						<p class="lead">Java</p>
+					</div>
+					<div class="col-md-6 col-lg-3">
+						<i class="fab fa-git fa-8x py-2"></i>
+						<p class="lead">Git</p>
+					</div>
+					<div class="col-md-6 col-lg-3">
+						<i class="fas fa-laptop-code fa-8x py-2"></i>
+						<p class="lead">R</p>
+					</div>
+				</div>
+	
+				<div class="row text-center py-5 g-4">
+					<div class="col-md-6 col-lg-3">
+						<i class="fab fa-html5 fa-8x py-2"></i>
+						<p class="lead">HTML</p>
+					</div>
+					<div class="col-md-6 col-lg-3">
+						<i class="fab fa-css3-alt fa-8x py-2"></i>
+						<p class="lead">CSS</p>
+					</div>
+					<div class="col-md-6 col-lg-3">
+						<i class="fab fa-js-square fa-8x py-2"></i>
+						<p class="lead">JavaScript</p>
+					</div>
+					<div class="col-md-6 col-lg-3">
+						<i class="fas fa-terminal fa-8x py-2"></i>
+						<p class="lead">Linux Terminal</p>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- Non Technical Skills Tab -->
+
+			<div class="tab-pane fade" id="nontech-skills" role="tabpanel" aria-labelledby="nontech-skills-tab">
+				<div class="row text-center py-5 g-4">
+					<div class="col-md-6 col-lg-4">
+						<i class="fas fa-language fa-8x py-2"></i>
+						<p class="lead">English, Hindi, Tamil, Japanese</p>
+						<!-- <p class="lead">Hindi & Tamil</p>
+						<p class="lead">Japanese</p> -->
+					</div>
+					<div class="col-md-6 col-lg-4">
+						<i class="fas fa-people-carry fa-8x py-2"></i>
+						<p class="lead">Team Work</p>
+					</div>
+					<div class="col-md-6 col-lg-4">
+						<i class="fas fa-street-view fa-8x py-2"></i>
+						<p class="lead">Public Speaking Skills</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Co-Curriculars Tab -->
+
+			<div class="tab-pane fade" id="coc-skills" role="tabpanel" aria-labelledby="coc-skills-tab">
+				<div class="row text-center py-5 g-4">
+					<div class="col-md-6 col-lg-3">
+						<i class="fas fa-robot fa-8x py-2"></i>
+						<p class="lead">SiNUsoid Tech Fest</p>
+					</div>
+					<div class="col-md-6 col-lg-3">
+						<i class="fas fa-chalkboard-teacher fa-8x py-2"></i>
+						<p class="lead">Community Connect</p>
+					</div>
+					<div class="col-md-6 col-lg-3">
+						<i class="fas fa-dumbbell fa-8x py-2"></i>
+						<p class="lead">Badminton Club</p>
+					</div>
+					<div class="col-md-6 col-lg-3">
+						<i class="fas fa-file-code fa-8x py-2"></i>
+						<p class="lead">Hack2NU Hackathon</p>
+					</div>
+				</div>
+
+				<div class="row text-center py-5 g-4">
+					<div class="col-md-6 col-lg-3">
+						<i class="fas fa-broom fa-8x py-2"></i>
+						<p class="lead">Swacch Bharat Abhiyan Programme</p>
+					</div>
+					<div class="col-md-6 col-lg-3">
+						<i class="fas fa-dumbbell fa-8x py-2"></i>
+						<p class="lead">Badminton Club</p>
+					</div>
+					<div class="col-md-6 col-lg-3">
+						<i class="fas fa-microchip fa-8x py-2"></i>
+						<p class="lead">NU Electronics Fair</p>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Educational Bakcground -->
+
+	<section class="p-5" id="education">
+		<div class="container align-items-center justify-content-center text-center">
+			<h2 class="display-4 mb-5 text-center">Educational Background</h2>
+			<div class="row text-center py-5 g-4">
+				<div class="col-md-6 col-lg-4 pl-3 pr-3">
+					<i class="fas fa-chalkboard-teacher fa-8x py-3"></i>
+					<h3>10th Grade</h3>
+					<p class="lead">Atomic Energy Central School - 6, Mumbai</p>
+					<p class="h2 display-4 lead">90.2%</p>
+					<!-- <p>
+						<div class="d-flex align-items-center justify-content-center">
+							<div class=" progress-bar-animation progress border" style="height: 
+							30px;width: 75%;border-radius: 15px;background-color: #bbc6da;">
+								<div role="progressbar " class="bg-info progress-bar lead" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" 
+								style="width: 90.2%;background-color: #4C566A;">
+									90.2%
+								</div>
+							</div>
+						</div>
+					</p> -->
+				</div>
+
+				<div class="col-md-6 col-lg-4 pl-3 pr-3 text-center align-items-center justify-content-center">
+					<i class="fas fa-school fa-8x py-3"></i>
+					<h3>12th Grade</h3>
+					<p class="lead">Atomic Energy Central School - 4, Mumbai</p>
+					<p class="h2 display-4 lead">86.4%</p>
+					<!-- <p class="">
+						<div class="d-flex align-items-center justify-content-center">
+							<div class="progress-bar-animation progress border" style="height: 30px;width: 
+							75%;border-radius: 15px;background-color: #bbc6da;">
+								<div role="progressbar" class="bg-info progress-bar lead" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" 
+								style="width: 86.4%;background-color: #4C566A;">
+									86.4%
+								</div>
+							</div>
+						</div>
+					</p> -->
+				</div>
+
+				<div class="col-md-6 col-lg-4 pl-3 pr-3">
+					<i class="fas fa-graduation-cap fa-8x py-3"></i>
+					<h3>Undergraduate Degree</h3>
+					<p class="lead">NIIT University, Neemrana</p>
+					<p class="h2 display-4 lead">8.27 CGPA</p>
+					<!-- <p>
+						<div class="d-flex align-items-center justify-content-center">
+							<div class=" progress-bar-animation progress border" style="height: 30px;width: 75%;border-radius: 15px;background-color: #bbc6da;">
+								<div role="progressbar" class="bg-info	progress-bar lead" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" 
+								style="width: 82.7%;background-color: #4C566A;">
+									8.27 CGPA
+								</div>
+							</div>
+						</div>
+					</p> -->
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- <div class="row p-2">
+		<div class="col-lg-3 col-md-6 p-2 text-left">
+			<a href="https://linkedin.com/kailashks" target="_blank" class="text-white" style="text-decoration: none;">
+				<i class="fab fa-linkedin fa-3x text-white p-2 align-middle"></i>
+				<span class="align-middle lead">linkedin.com/kailashks</span>
+			</a>
+		</div>
+
+		<div class="col-lg-3 col-md-6 p-2 text-left">
+			<a href="https://github.com/kailashks" target="_blank" class="text-white" style="text-decoration: none;">
+				<i class="fab fa-github fa-3x text-white p-2 align-middle"></i>
+				<span class="align-middle lead">github.com/kailashks</span>
+			</a>
+		</div>
+
+		<div class="col-lg-3 col-md-6 p-2 text-left">
+			<a href="https://github.com/kailashks" target="_blank" class="text-white" style="text-decoration: none;">
+				<i class="fab fa-github fa-3x text-white p-2 align-middle"></i>
+				<span class="align-middle lead">Ph: +91 8369955919   </span>
+			</a>
+		</div>
+
+		<div class="col-lg-3 col-md-6 p-2">
+			<a href="" target="_blank" class="text-white" style="text-decoration: none;">
+				<i class="fas fa-envelope-square fa-3x text-white p-2 align-middle"></i>
+				<span class="align-middle lead">karthikkailash6@gmail.com</span>
+			</a>
+
+		</div>
+
+	</div> -->
+	<!-- footer -->
+
+	<footer class="p-5 bgCustom text-white text-center align-items-center justify-content-between rounded-top>
+		<div class="container ">
+			<h2 class="display-4 mb-5 text-center">Get In Touch</h2>
+			<p class="lead">I'm currently looking for full-time Software Engineering or Data Analyst opportunities!
+				If you have any questions, please feel free to email me at 
+				<span class="fw-bold">karthikkailash6@gmail.com</span> or contact me on my mobile, 
+				<span class="fw-bold">+91 8369955919</span>.
+			</p>
+			<div class="d-sm-flex align-items-center justify-content-center">
+				<div class="row py-5 g-4">
+					<div class="col-md-6 col-lg-4">
+						<a href="https://linkedin.com/in/KailashKS" target="_blank" class="text-white" 
+						style="text-decoration: none;">
+							<i class="fab fa-linkedin fa-3x py-2"></i>
+						</a>	
+						
+					</div>
+					<div class="col-md-6 col-lg-4">
+						<a href="https://github.com/kailashks" target="_blank" class="text-white" 
+						style="text-decoration: none;">
+							<i class="fab fa-github-square fa-3x py-2"></i>
+						</a>
+						
+					</div>
+					<div class="col-md-6 col-lg-4">
+						<a href="https://reddit.com/u/7K_K7" target="_blank" class="text-white" 
+						style="text-decoration: none;">
+							<i class="fab fa-reddit-square fa-3x py-2"></i>
+						</a>
+						
+					</div>
+				</div>
+			</div>	
+
+
+			
+			<u><p class="copyright pt-2">Copyright &copy; 2021 Kailash Karthik Sekhar</p></u>
+		</div>
+	</footer>
+
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+	<script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+
+	<!-- Address & Map -->
+
+	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAE4cUYpPt2p0-yFZSsISerfvkW_f-OZxo&callback=initMap&libraries=&v=weekly&channel=2"
+	async>
+	</script>
+
+	<script src="/assets/js/location.js"></script> -->
+	<!-- <script src="./assets/js/repo.js"></script> -->
+	<script src="./assets/js/typing.js"></script>
+	<script src="./assets/js/invert.js"></script>
+	
+</body>
+</html>
