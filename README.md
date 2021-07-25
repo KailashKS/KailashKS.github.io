@@ -1,3 +1,3 @@
 # KailashKS.github.io
 
-This is a simple portfolio site made majorly using HTML, CSS and BootStrap
+Hello. Welcome to my digital portfolio repo. The link to my hosted site is kailashks.github.io
