@@ -8,7 +8,8 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-	<link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+	<link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/all.min.css">
+
 	<link rel="stylesheet" href="./assets/css/style.css">
 
 	<link rel="icon" href="./images/graduated.png" type="image/x-icon"/>
@@ -16,9 +17,12 @@
 </head>
 <body>
 	<!-- Navbar -->
-	<nav class="navbar sticky-top navbar-expand-lg bgCustom navbar-dark py-3">
+	<nav class="navbar sticky-top navbar-expand-lg bgCustom-navbar navbar-dark py-3 shadow-lg">
 		<div class="container-lg">
-			<a href="#home" class="navbar-brand lead h1 smoothScroll">&lt;Kailash /&gt;</a>
+			<a href="#home" class="navbar-brand lead h1 smoothScroll">
+				<span class="text-warning">&lt;Kailash /&gt;</span>
+				
+			</a>
 
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
 			data-bs-target="#navmenu">
@@ -57,13 +61,13 @@
 		<div class="container">
 			<div class="d-sm-flex align-items-center justify-content-between">
 				<div>
-					<h1 class="mx-5">Kailash Karthik <span class="text-warning" id="last-name"></span></h1>
-					<p class="lead my-4 mx-5">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-						Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
-						nulla pariatur.
+					<h1 class="mx-5">Kailash Karthik <span class="text-warning" id="last-name">Sekhar</span></h1>
+					<p class="display-7 lead mt-4 mx-5">
+						I am a developer, aspiring Data Scientist and a Linux enthusiast.
+					</p>
+					<p class="display-7 lead mx-5 text-justify">
+						"<em>Code is like humor. When you have to explain it, it’s bad..</em>"<br>
+						<span class="text-warning text-right" id="custom-text"></span>
 					</p>
 				</div>
 				<img class="img-fluid w-50 d-none d-sm-block" src="images/showcase.svg" alt="">
@@ -71,15 +75,21 @@
 		</div>
 	</section>
 
-
 	<!-- Projects -->
 	
 	<section class="p-5" id="projects">
 		<div class="container">
 			<h2 class="display-4 mb-5 text-center">Projects</h2>
+			<div class="text-center">
+				<a href="https://github.com/KailashKS" target="_blank" class="btn btn-lg 
+				btn-outline-secondary mb-5 align-center">
+					<i class="fab fa-github"></i>
+					<span class="lead"> Github</span>
+				</a>
+			</div>
 			<div class="row text-center g-4">
 				<div class="col-md">
-					<div class="card p-2 shadow-lg bg-white rounded text-dark">
+					<div class="card p-2 shadow-lg bg-white rounded text-custom">
 						<div class="card-body text-center">
 							<div class="h1 mb-3">
 								<i class="bi bi-laptop"></i>
@@ -144,7 +154,7 @@
 					<h2 class="display-4 mb-5 text-center">About Me</h2>
 					<p class="lead">
 						My name is Kailash Karthik Sekhar. I am currently pursuing my Bachelors Degree in 
-						Computer Science, specialising in Data Science from NIIT University Neemrana 
+						Computer Science, specialising in Data Science from NIIT University, Neemrana 
 						(graduating in 2022). I am passionate when it comes to technology and try to learn 
 						something new everyday. In my free time I like to tinker around with Linux Distros.
 					</p>
@@ -176,51 +186,6 @@
 	<!-- I HATE COMMENTING FOR FFS.. SHOULD HAVE USED WIX -->
 
 	<!-- Skills -->
-
-	<!-- <section class="bgCustom shadow-lg rounded z-index-2 text-white p-5" id="skills">
-		<div class="container align-items-center justify-content-center text-center">
-			<h2 class="display-4 mb-5 text-center">Skills</h2>
-			<div class="row text-center py-4 g-4">
-				<div class="col-md-6 col-lg-3">
-					<i class="fab fa-python fa-8x py-2"></i>
-					<p class="lead">Python</p>
-				</div>
-				<div class="col-md-6 col-lg-3">
-					<i class="fab fa-java fa-8x py-2"></i>
-					<p class="lead">Java</p>
-				</div>
-				<div class="col-md-6 col-lg-3">
-					<i class="fab fa-git fa-8x py-2"></i>
-					<p class="lead">Git</p>
-				</div>
-				<div class="col-md-6 col-lg-3">
-					<i class="fas fa-laptop-code fa-8x py-2"></i>
-					<p class="lead">R</p>
-				</div>
-			</div>
-
-			<div class="row text-center py-5 g-4">
-				<div class="col-md-6 col-lg-3">
-					<i class="fab fa-html5 fa-8x py-2"></i>
-					<p class="lead">HTML</p>
-				</div>
-				<div class="col-md-6 col-lg-3">
-					<i class="fab fa-css3-alt fa-8x py-2"></i>
-					<p class="lead">CSS</p>
-				</div>
-				<div class="col-md-6 col-lg-3">
-					<i class="fab fa-js-square fa-8x py-2"></i>
-					<p class="lead">JavaScript</p>
-				</div>
-				<div class="col-md-6 col-lg-3">
-					<i class="fas fa-terminal fa-8x py-2"></i>
-					<p class="lead">Linux Terminal</p>
-				</div>
-			</div>
-		</div>
-	</section> -->
-
-	<!-- Tabs -->
 
 	<section class="bgCustom shadow-lg rounded z-index-2 text-white p-5" id="skills">
 		<div class="container align-items-center justify-content-center text-center">
@@ -275,6 +240,32 @@
 						<p class="lead">Linux Terminal</p>
 					</div>
 				</div>
+
+				<div class="row text-center py-5 g-4">
+					<div class="col-md-6 col-lg-3">
+						<i class="cib-django fa-8x py-2"></i>
+						<p class="lead">Django</p>
+					</div>
+					<div class="col-md-6 col-lg-3">
+						<i class="cib-flask fa-8x py-2"></i>
+						<p class="lead">Flask</p>
+					</div>
+					<div class="col-md-6 col-lg-3">
+						<i class="fab cib-mysql fa-8x py-2"></i>
+						<p class="lead">MySQL</p>
+					</div>
+					<div class="col-md-6 col-lg-3">
+						<i class="cib-flutter fa-8x py-2"></i>
+						<p class="lead">Flutter</p>
+					</div>
+					
+					<div class="row text-center py-5 g-4">
+						<div class="col-md-6 col-lg-3">
+							<i class="cib-adobe-xd fa-8x py-2"></i>
+							<p class="lead">Adobe XD</p>
+						</div>
+					</div>
+				</div>
 			</div>
 
 
@@ -312,8 +303,8 @@
 						<p class="lead">Community Connect</p>
 					</div>
 					<div class="col-md-6 col-lg-3">
-						<i class="fas fa-dumbbell fa-8x py-2"></i>
-						<p class="lead">Badminton Club</p>
+						<i class="iconify fa-9x py-2" data-icon="mdi-badminton" data-inline="false"></i>
+						<p class="lead">Badminton AOC</p>
 					</div>
 					<div class="col-md-6 col-lg-3">
 						<i class="fas fa-file-code fa-8x py-2"></i>
@@ -343,7 +334,8 @@
 			<h2 class="display-4 mb-5 text-center">Educational Background</h2>
 			<div class="row text-center py-5 g-4">
 				<div class="col-md-6 col-lg-4 pl-3 pr-3">
-					<i class="fas fa-chalkboard-teacher fa-8x py-3"></i>
+					<span class="iconify fa-8x py-3" data-icon="fxemoji-school" data-inline="false"></span>
+					<!-- <i class="fas fa-chalkboard-teacher fa-8x py-3 custom-icon"></i> -->
 					<h3>10th Grade</h3>
 					<p class="lead">Atomic Energy Central School - 6, Mumbai</p>
 					<p class="h2 display-4 lead">90.2%</p>
@@ -360,8 +352,9 @@
 					</p> -->
 				</div>
 
-				<div class="col-md-6 col-lg-4 pl-3 pr-3 text-center align-items-center justify-content-center">
-					<i class="fas fa-school fa-8x py-3"></i>
+				<div class="col-md-6 col-lg-4 text-center align-items-center justify-content-center">
+					<span class="iconify fa-8x py-3" data-icon="noto-school" data-inline="false"></span>
+					<!-- <i class="fas fa-school fa-8x py-3 custom-icon"></i> -->
 					<h3>12th Grade</h3>
 					<p class="lead">Atomic Energy Central School - 4, Mumbai</p>
 					<p class="h2 display-4 lead">86.4%</p>
@@ -378,8 +371,9 @@
 					</p> -->
 				</div>
 
-				<div class="col-md-6 col-lg-4 pl-3 pr-3">
-					<i class="fas fa-graduation-cap fa-8x py-3"></i>
+				<div class="col-md-6 col-lg-4 my-4">
+					<!-- <i class="fas fa-graduation-cap fa-8x py-3 custom-icon"></i> -->
+					<span class="iconify fa-8x " data-icon="fxemoji-graduationcap" data-inline="false"></span>
 					<h3>Bachelors in Computer Science</h3>
 					<p class="lead">NIIT University, Neemrana</p>
 					<p class="h2 display-4 lead">8.27 CGPA</p>
@@ -399,37 +393,15 @@
 	</section>
 
 
-	<!-- <div class="row p-2">
-		<div class="col-lg-3 col-md-6 p-2 text-left">
-			<a href="https://linkedin.com/kailashks" target="_blank" class="text-white" style="text-decoration: none;">
-				<i class="fab fa-linkedin fa-3x text-white p-2 align-middle"></i>
-				<span class="align-middle lead">linkedin.com/kailashks</span>
-			</a>
-		</div>
+	<!-- Map -->
+	<!-- <section class="bg-dark">
+		<div class="container">
+			<div class="text-center">
+				<div id="map"></div>
+			</div>
+		</div> -->
 
-		<div class="col-lg-3 col-md-6 p-2 text-left">
-			<a href="https://github.com/kailashks" target="_blank" class="text-white" style="text-decoration: none;">
-				<i class="fab fa-github fa-3x text-white p-2 align-middle"></i>
-				<span class="align-middle lead">github.com/kailashks</span>
-			</a>
-		</div>
-
-		<div class="col-lg-3 col-md-6 p-2 text-left">
-			<a href="https://github.com/kailashks" target="_blank" class="text-white" style="text-decoration: none;">
-				<i class="fab fa-github fa-3x text-white p-2 align-middle"></i>
-				<span class="align-middle lead">Ph: +91 8369955919   </span>
-			</a>
-		</div>
-
-		<div class="col-lg-3 col-md-6 p-2">
-			<a href="" target="_blank" class="text-white" style="text-decoration: none;">
-				<i class="fas fa-envelope-square fa-3x text-white p-2 align-middle"></i>
-				<span class="align-middle lead">karthikkailash6@gmail.com</span>
-			</a>
-
-		</div>
-
-	</div> -->
+	</section>
 	<!-- footer -->
 
 	<footer class="p-5 bgCustom text-white text-center align-items-center justify-content-between rounded-top>
@@ -438,7 +410,7 @@
 			<p class="lead">I'm currently looking for full-time Software Engineering or Data Analyst opportunities!
 			</p>
 			<p class="lead">
-				If you have any questions, please feel free to contact me using the information below.
+				If you have any questions, feel free to contact me using the links given below.
 			</p>
 			<div class="d-sm-flex align-items-center justify-content-center">
 				<div class="row py-5 g-4">
@@ -467,15 +439,15 @@
 
 			
 			<u><p class="copyright pt-2">Copyright &copy; 2021 Kailash Karthik Sekhar</p></u>
+			
 		</div>
 	</footer>
 
 
-
+	<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
-	<!-- <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script> -->
 	<script src="./assets/js/repo.js"></script>
 	<script src="./assets/js/smooth.js"></script>
 	<script src="./assets/js/typing.js"></script>
@@ -485,10 +457,6 @@
 	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAE4cUYpPt2p0-yFZSsISerfvkW_f-OZxo&callback=initMap&libraries=&v=weekly&channel=2"
 	async>
 	</script>
-
-	<script src="/assets/js/location.js"></script> -->
-	<!-- <script src="./assets/js/repo.js"></script> -->
-	
-	
+	<script src="./assets/js/location.js"></script> -->
 </body>
 </html>
