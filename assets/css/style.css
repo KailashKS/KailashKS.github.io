@@ -93,3 +93,13 @@ body {
 	color: #363d4e;
 	border-color: #4C566A;
 }
+
+.home__blob-img {
+	width: 100px;
+}
+
+.home__blob {
+	width: 650px;
+	height: 650px;
+	fill: #F8F8FF
+}
