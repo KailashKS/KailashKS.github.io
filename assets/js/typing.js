@@ -5,7 +5,7 @@
 //   }).go();
 
   new TypeIt("#custom-text", {
-	strings: "- Cory House",
+	strings: "- Chris Heilmann",
 	speed: 100,
 	waitUntilVisible: true
   }).go();
