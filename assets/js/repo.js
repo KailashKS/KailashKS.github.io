@@ -24,7 +24,6 @@ window.onload = async function getRepos() {
 			const response1 = await fetch(lang_url)
 			const result1 = await response1.json()
 			for(var key in result1){
-				console.log(currentVal)
 				if (currentVal.name == repos[0]){
 					title1.innerHTML = currentVal.name
 					langused1.innerHTML += '<span class="badge bg-light m-1 text-dark">' + key + '</span>'
