@@ -20,7 +20,7 @@ window.onload = async function getRepos() {
 			const result1 = await response1.json()
 			for(var key in result1){
 				
-				langused1.innerHTML += key + ", ";
+				langused1.innerHTML += '<span class="badge bg-light m-1 text-dark">' + key + '</span>'
 			}
 		}
 	}
