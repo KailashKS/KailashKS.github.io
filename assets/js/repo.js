@@ -3,12 +3,10 @@ window.onload = async function getRepos() {
 	const title2 = document.getElementById("title-2");
 	const title3 = document.getElementById("title-3");
 	const title4 = document.getElementById("title-4");
-	const title5 = document.getElementById("title-5");
 	const langused1 = document.getElementById("language-used-1")
 	const langused2 = document.getElementById("language-used-2")
 	const langused3 = document.getElementById("language-used-3")
 	const langused4 = document.getElementById("language-used-4")
-	const langused5 = document.getElementById("language-used-5")
 	const url = "https://api.github.com/users/KailashKS/repos"
 	const response = await fetch(url)
 
@@ -20,12 +18,13 @@ window.onload = async function getRepos() {
 
 	result.forEach(function1)
 	async function function1(currentVal) {
-		const repos = ["ArcticEcologySimulation", "crud_employee", "eShop_App", "SoCure", "KailashKS.github.io"]
+		const repos = ["ArcticEcologySimulation", "crud_employee", "eShop_App", "KailashKS.github.io"]
 		if( repos.includes(currentVal.name) ){
 			const lang_url = ("https://api.github.com/repos/KailashKS/" + currentVal.name + "/languages")
 			const response1 = await fetch(lang_url)
 			const result1 = await response1.json()
 			for(var key in result1){
+				console.log(currentVal)
 				if (currentVal.name == repos[0]){
 					title1.innerHTML = currentVal.name
 					langused1.innerHTML += '<span class="badge bg-light m-1 text-dark">' + key + '</span>'
@@ -41,10 +40,6 @@ window.onload = async function getRepos() {
 				else if (currentVal.name == repos[3]){
 					title4.innerHTML = currentVal.name
 					langused4.innerHTML += '<span class="badge bg-light m-1 text-dark">' + key + '</span>'
-				}
-				else if (currentVal.name == repos[4]){
-					title5.innerHTML = currentVal.name
-					langused5.innerHTML += '<span class="badge bg-light m-1 text-dark">' + key + '</span>'
 				}
 				
 			}
