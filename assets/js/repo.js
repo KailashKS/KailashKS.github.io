@@ -25,19 +25,19 @@ window.onload = async function getRepos() {
 			const result1 = await response1.json()
 			for(var key in result1){
 				if (currentVal.name == repos[0]){
-					title1.innerHTML = currentVal.name
+					title1.innerHTML = "Arctic Ecology Simulation"
 					langused1.innerHTML += '<span class="badge bg-light m-1 text-dark">' + key + '</span>'
 				}
 				else if (currentVal.name == repos[1]){
-					title2.innerHTML = currentVal.name
+					title2.innerHTML = "Employee Management System"
 					langused2.innerHTML += '<span class="badge bg-light m-1 text-dark">' + key + '</span>'
 				}
 				else if (currentVal.name == repos[2]){
-					title3.innerHTML = currentVal.name
+					title3.innerHTML = "eShopping App"
 					langused3.innerHTML += '<span class="badge bg-light m-1 text-dark">' + key + '</span>'
 				}
 				else if (currentVal.name == repos[3]){
-					title4.innerHTML = currentVal.name
+					title4.innerHTML = "Portfolio Website"
 					langused4.innerHTML += '<span class="badge bg-light m-1 text-dark">' + key + '</span>'
 				}
 				
