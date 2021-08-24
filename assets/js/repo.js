@@ -2,11 +2,9 @@ window.onload = async function getRepos() {
 	const title1 = document.getElementById("title-1");
 	const title2 = document.getElementById("title-2");
 	const title3 = document.getElementById("title-3");
-	const title4 = document.getElementById("title-4");
 	const langused1 = document.getElementById("language-used-1")
 	const langused2 = document.getElementById("language-used-2")
 	const langused3 = document.getElementById("language-used-3")
-	const langused4 = document.getElementById("language-used-4")
 	const url = "https://api.github.com/users/KailashKS/repos"
 	const response = await fetch(url)
 
@@ -35,10 +33,6 @@ window.onload = async function getRepos() {
 				else if (currentVal.name == repos[2]){
 					title3.innerHTML = "eShopping App"
 					langused3.innerHTML += '<span class="badge bg-light m-1 text-dark">' + key + '</span>'
-				}
-				else if (currentVal.name == repos[3]){
-					title4.innerHTML = "Portfolio Website"
-					langused4.innerHTML += '<span class="badge bg-light m-1 text-dark">' + key + '</span>'
 				}
 				
 			}
